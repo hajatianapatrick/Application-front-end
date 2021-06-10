@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>price</th>
+        <th>quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mydata of data[0]">
+        <td>{{mydata.id}}</td>
+        <td>{{mydata.name}}</td>
+        <td>{{mydata.price}}</td>
+        <td>{{mydata.quantity}}</td>
+        <td><button class="btn btn-danger" (click)="deleterepas(mydata.id)">Delete</button></td>
+      </tr>
+    </tbody>
+</table>
